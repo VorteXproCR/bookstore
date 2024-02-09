@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <style>
+    body{
+    }
+    main{
+      border-style: solid;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+    }
+
+    .container{
+      display: flex;
+      border-style: solid;
+      width: 750px;
+      margin-bottom: 30px;
+    }
+    img{
+      width: 150px;
+    }
+    .info-container{
+      border-style: solid;
+      border-width: 1px;
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .title{
+      margin: 0;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .writers{
+      color: blue;
+      /* border: solid; */
+      margin-bottom: 10px;
+    }
+    .more{
+      margin-top: 5px;
+      margin-bottom: 10px;
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    button{
+      cursor: pointer;
+    }
+    .caption{
+      margin-bottom: 10px;
+      color: grey;
+    }
+  </style>
+</head>
+<body>
+  <h1>Book Store</h1>
+  <main>
+
+    <div class="container">
+      <div>
+        <img src="./sample-book-img.jpeg" alt="">
+      </div>
+      <div class="info-container">
+        <p class="title">Design Patterns: Elements of Reusable Object-Oriented Software</p>
+        <span class="caption">Pearson Education, 31 Oct 1994 - Computers - 416 pages</span>
+        <span  class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</span>
+  
+        <span class="small-desc">The Gang of Four’s seminal catalog of 23 patterns to solve commonly occurring design problems
+  
+          Patterns allow designers to create more flexible, elegant, and ultimately reusable designs without having to rediscover the design solutions themselves. Highly influential, Design Patterns is a modern classic that introduces... </span>
+          <span class="more">Read More...</span>
+  
+          <button>Preview this book</button>
+          <button>View Notes</button>
+          
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <img src="./sample-book-img.jpeg" alt="">
+      </div>
+      <div class="info-container">
+        <p class="title">Design Patterns: Elements of Reusable Object-Oriented Software</p>
+        <span class="caption">Pearson Education, 31 Oct 1994 - Computers - 416 pages</span>
+        <span  class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</span>
+  
+        <span class="small-desc">The Gang of Four’s seminal catalog of 23 patterns to solve commonly occurring design problems
+  
+          Patterns allow designers to create more flexible, elegant, and ultimately reusable designs without having to rediscover the design solutions themselves. Highly influential, Design Patterns is a modern classic that introduces... </span>
+          <span class="more">Read More...</span>
+  
+          <button>Preview this book</button>
+          <button>View Notes</button>
+          
+      </div>
+    </div>
+  </main>
+</body>
+</html>

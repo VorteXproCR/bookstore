@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book site 2 Sample</title>
+  <style>
+    body{
+      background-image: url('./img3.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    .all-books{
+      border-style: solid;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .book{
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.25s ease;
+      min-height: 100px;
+      
+    }
+
+    .book:hover{
+      /* width: 102%; */
+      /* transition: ease-in; */
+      transform: scaleX(1.05);
+    /* transform-origin: bottom left; */
+    }
+    .image1{
+      width: 500px;
+      height: 200px;
+      display: block;
+    }
+    .book-title{
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      text-align: center;
+      font-size: 22px;
+    }
+    .book-desc{
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #c8f18f;
+      text-align: center;
+    }
+    .writers{
+      background-color: rgba(0, 0, 0, 0.5);
+      color: rgb(163, 161, 161);
+      font-size: 14px;
+      padding: 5px;
+    }
+
+    .book-buttons{
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: space-around;
+      height: 8%;
+      margin-bottom: 5px;
+
+    }
+    button{
+      width: 100px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      color: rgb(232, 77, 232);
+      border-color: rgb(232, 77, 232);
+      cursor: pointer;
+    }
+
+    main{
+      padding: 20px;
+    }
+    header{
+      color: white;
+      display: flex;
+      justify-content: space-evenly;
+
+      border-style: solid;
+      backdrop-filter: blur(3px);
+      border-color: rgb(255, 255, 255);
+      border-width: 1.5px;
+      padding: 10px 10px;
+      border-radius: 7px;
+      box-shadow: 3px 3px #888888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Books Available</h1>
+  </header>
+
+  <main>
+    <div class="all-books">
+      <div class="book">
+        <a href="https://books.google.co.in/books?id=6oHuKQe3TjQC&source=gbs_slider_cls_metadata_0_mylibrary&redir_esc=y" target="_blank"><img class="image1" src="./sample-book-img.jpeg" alt=""></a>
+        
+        <div class="book-title">Design Patterns: Elements of Reusable Object-Oriented Software</div>
+        
+        <div class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+        </div>
+
+        <div class="book-desc">The Gang of Four's seminal catalog of 23 patterns to solve commonly occurring design problems Patterns allow designers to create more flexible, elegant, and ultimately reusable designs without having to rediscover the design solutions themselves. Highly influential, Design Patterns is a modern classic that introduces...</div>
+
+        <div class="book-buttons">
+          <button>Preview</button>
+          <button>Download</button>
+          <button><img src="./notes-button.webp" alt=""></button>
+        </div>
+
+      </div>
+
+      <div class="book">
+        <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./dsaBook-img.jpeg" alt=""></a>
+        <div class="book-title">Data Structures and Algorithms Edition 5</div>
+
+        <div class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+        </div>
+
+        <div class="book-desc">This textbook serves as a gentle introduction for undergraduates to theoretical concepts in data structures and algorithms in computer science while providing coverage of practical implementation (coding) issues.
+        </div>
+
+        <div class="book-buttons">
+          <button>Preview</button>
+          <button>Download</button>
+          <button>Notes</button>
+        </div>
+
+      </div>
+
+      <div class="book">
+        <img class="image1" src="./bk-img2.png" alt="">
+        <div class="book-title">Physics</div>
+
+        <div class="writers">Writers :
+        </div>
+
+        <div class="book-desc">Description</div>
+
+        <div class="book-buttons">
+          <button>Preview</button>
+          <button>Download</button>
+          <button>Notes</button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
