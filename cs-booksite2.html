@@ -6,7 +6,7 @@
   <title>Book site 2 Sample</title>
   <style>
     body{
-      background-image: url('./img3.png');
+      background-image: url('./Backgrounds/img3.png');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 100% 100%;
@@ -23,6 +23,11 @@
       overflow: hidden;
       transition: transform 0.25s ease;
       min-height: 100px;
+
+      text-align: center;
+      padding-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      
     }
 
     .book:hover{
@@ -39,30 +44,32 @@
     }
     .book-title{
       padding: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
+      /* background-color: rgba(0, 0, 0, 0.5); */
       color: #fff;
       text-align: center;
       font-size: 22px;
     }
     .book-desc{
       padding: 10px;
-      background-color: rgba(0, 0, 0, 0.5);
+      /* background-color: rgba(0, 0, 0, 0.5); */
       color: #c8f18f;
       text-align: center;
+
     }
     .writers{
-      background-color: rgba(0, 0, 0, 0.5);
+      /* background-color: rgba(0, 0, 0, 0.5); */
       color: rgb(163, 161, 161);
       font-size: 14px;
       padding: 5px;
     }
 
     .book-buttons{
-      background-color: rgba(0, 0, 0, 0.5);
+      /* background-color: rgba(0, 0, 0, 0.5); */
       display: flex;
       justify-content: space-around;
       height: 8%;
       margin-bottom: 5px;
+
 
     }
     button{
@@ -72,6 +79,7 @@
       color: rgb(232, 77, 232);
       border-color: rgb(232, 77, 232);
       cursor: pointer;
+
     }
 
     main{
@@ -102,6 +110,7 @@
     .imageContainer{
       display: flex;
       justify-content: center;
+
     }
   </style>
 </head>
@@ -115,12 +124,12 @@
       <div class="book">
         <div class="imageContainer">
 
-          <a href="https://books.google.co.in/books?id=6oHuKQe3TjQC&source=gbs_slider_cls_metadata_0_mylibrary&redir_esc=y" target="_blank"><img class="image1" src="./sample-book-img.jpeg" alt=""></a>
+          <a href="https://books.google.co.in/books?id=6oHuKQe3TjQC&source=gbs_slider_cls_metadata_0_mylibrary&redir_esc=y" target="_blank"><img class="image1" src="./Images/sample-book-img.jpeg" alt=""></a>
         </div>
         
         <!-- <div class="imageContainer"></div> -->
           
-          <div class="book-title">Design Patterns: Elements of Reusable Object-Oriented Software</div>
+        <div class="book-title">Design Patterns: Elements of Reusable Object-Oriented Software</div>
         
         <div class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
         </div>
@@ -136,7 +145,11 @@
       </div>
 
       <div class="book">
-        <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./dsaBook-img.jpeg" alt=""></a>
+
+        <div class="imageContainer">
+          <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./Images/dsaBook-img.jpeg" alt=""></a>
+        </div>
+
         <div class="book-title">Data Structures and Algorithms Edition 5</div>
 
         <div class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
@@ -154,13 +167,19 @@
       </div>
 
       <div class="book">
-        <img class="image1" src="./bk-img2.png" alt="">
-        <div class="book-title">Physics</div>
+        <div class="imageContainer">
 
-        <div class="writers">Writers :
+          <a href="" target="_blank">
+            <img class="image1" src="./Images/sample-book-img.jpeg" alt="">
+          </a>
+
+        </div>
+        <div class="book-title">Code Complete</div>
+
+        <div class="writers">Writers : Steve McConnell
         </div>
 
-        <div class="book-desc">Description</div>
+        <div class="book-desc">Code Complete is a software development book, written by Steve McConnell and published in 1993 by Microsoft Press, encouraging developers to continue past code-and-fix programming and the big design up front and waterfall models.</div>
 
         <div class="book-buttons">
           <button>Preview</button>
@@ -171,13 +190,16 @@
       </div>
 
       <div class="book">
-        <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./dsaBook-img.jpeg" alt=""></a>
-        <div class="book-title">Data Structures and Algorithms Edition 5</div>
-
-        <div class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+        <div class="imageContainer">
+          <a href="https://books.google.co.in/books/about/Head_First_Java.html?id=kKtQAAAAMAAJ&source=kp_book_description&redir_esc=y" target="_blank"><img class="image1" src="./Images/java-book.webp" alt=""></a>
         </div>
 
-        <div class="book-desc">This textbook serves as a gentle introduction for undergraduates to theoretical concepts in data structures and algorithms in computer science while providing coverage of practical implementation (coding) issues.
+        <div class="book-title">Head First Java</div>
+
+        <div class="writers">Writers : Kathy Sierra, Bert Bates
+        </div>
+
+        <div class="book-desc">Between Moore's law and the notion of "Internet time," we're constantly being bombarded with more and more information--most of it in the form of disorganized data. Turning this information into useful knowledge is getting harder and harder to do, and it takes time that we just don't have...
         </div>
 
         <div class="book-buttons">
@@ -188,8 +210,11 @@
 
       </div>
 
-            <div class="book">
-        <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./dsaBook-img.jpeg" alt=""></a>
+      <div class="book">
+        <div class="imageContainer">
+          <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./Images/dsaBook-img.jpeg" alt=""></a>
+        </div>
+
         <div class="book-title">Data Structures and Algorithms Edition 5</div>
 
         <div class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides

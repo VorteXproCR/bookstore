@@ -6,7 +6,7 @@
   <title>Select Subject</title>
   <style>
     body{
-      background-image: url('./bg-img-book.avif');
+      background-image: url('./Backgrounds/bg-img-book.avif');
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: 100% 100%;
@@ -51,6 +51,11 @@
       border-radius: 7px;
       box-shadow: 3px 3px #888888;
     }
+
+    .image-container{
+      display: flex;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
@@ -61,18 +66,26 @@
   <main>
     <div class="all-books">
       <div class="book">
-        <a href="./cs-booksite.html" target="_blank"><img class="image1" src="./bk-img2.png" alt=""></a>
+        <div class="image-container">
+          <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./Backgrounds/bk-img2.png" alt=""></a>
+        </div>
         
         <div class="caption">Computer Science</div>
       </div>
 
       <div class="book">
-        <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./bk-img2.png" alt=""></a>
+        <div class="image-container">
+          <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./Backgrounds/bk-img2.png" alt=""></a>
+        </div>
+
         <div class="caption">Maths</div>
       </div>
 
       <div class="book">
-        <img class="image1" src="./bk-img2.png" alt="">
+        <div class="image-container">
+          <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./Backgrounds/bk-img2.png" alt=""></a>
+        </div>
+
         <div class="caption">Physics</div>
       </div>
     </div>
