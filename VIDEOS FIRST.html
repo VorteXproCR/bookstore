@@ -175,8 +175,24 @@
         </div>
     </main>
 
-    <footer>
+    <!-- <footer>
         <p>&copy; gsdjcgsdlgsd</p>
-    </footer>
+    </footer> -->
+    <script>
+        
+        const containers = document.querySelectorAll('.container');
+
+        containers.forEach(container => {
+            const vidSpan = container.querySelector('.vid');
+   
+            container.addEventListener('mouseover', function() {
+                vidSpan.style.display = 'inline';
+            });
+      
+            container.addEventListener('mouseout', function() {
+                vidSpan.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
