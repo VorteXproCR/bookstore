@@ -1,0 +1,72 @@
+body{
+  background-image: url('/Backgrounds/bg-5.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+header{
+  margin-top: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+
+  border-style: solid;
+  backdrop-filter: blur(3px);
+  border-color: rgb(255, 255, 255);
+  border-width: 1.5px;
+  padding: 10px 10px;
+  border-radius: 7px;
+  box-shadow: 3px 3px #888888;
+
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  
+}
+
+nav{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+  /* transition: 5s ease; */
+
+
+  /* border-style: solid; */
+  /* border-color: red; */
+
+}
+
+nav>a{
+
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  /* border-style: solid; */
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+
+  position: relative;
+  /* transition: text-decoration 1s ease; */
+}
+
+nav>a:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+nav>a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+

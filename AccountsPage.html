@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+
+  <style>
+    body{
+      margin: 0;
+    }
+    .full-container{
+      display: flex;
+    }
+    .sidebar{
+      width: 30%;
+      background-color: grey;
+    }
+    .details-side{
+      border-style: solid;
+      width: 70%;
+      background-color: lightgrey;
+      padding: 10px;
+
+    }
+    .personal-details>p{
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+
+      border-style: solid;
+      height: 30px;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    .input-fields{
+      display: grid;
+      grid-template-columns: 250px 250px;
+      gap: 40px;
+      width: 100%;
+    }
+    .input-fields>input{
+      width: 250px;
+      height: 40px;
+    }
+    .inputss{
+      position: relative;
+      border-style: solid;
+    }
+    .iflabels{
+      position: absolute;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="full-container">
+    <div class="sidebar">
+      <ul>
+        <a href="">General</a>
+      </ul>
+    </div>
+
+    <div class="details-side">
+      <div class="personal-details">
+        <p>Personal Details</p>
+        <br>
+        <div class="input-fields">
+          <input class="inputss" type="text" placeholder="CurrentName">
+          <span class="iflabels">Name</span>
+  
+          <input type="text" readonly placeholder="jordan123@gmail.com">
+  
+          <input type="text" placeholder="Contact">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+</body>
+</html>
