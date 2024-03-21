@@ -130,8 +130,54 @@
       text-decoration: none;
     }
   </style>
+  <script>
+    function adddata()
+    {
+       container=document.getElementById("all-books");
+      for(var i=0;i<5;i++)
+      {
+      var x=document.createElement('div');
+      var y=document.createElement('div');
+      var z=document.createElement('a');
+      var a=document.createElement('div');
+      var b=document.createElement('div');
+      var c=document.createElement('div');
+      var d=document.createElement('img');
+      var e=document.createElement('br');
+      x.setAttribute("id","Book");
+      x.setAttribute("class","Book");
+      d.setAttribute("id","image1");
+      d.setAttribute("class","image1");
+      d.setAttribute("src","./Images/sample-book-img.jpeg")
+      y.setAttribute("id","imageContainer");
+      y.setAttribute("class","imageContainer");
+      z.setAttribute("id","a");
+      z.setAttribute("class","a");
+      z.setAttribute("href","https://books.google.co.in/books?id=6oHuKQe3TjQC&source=gbs_slider_cls_metadata_0_mylibrary&redir_esc=y");
+      a.setAttribute("id","book-title");
+      a.setAttribute("class","book-title");
+      a.innerHTML="Design Patterns: Elements of Reusable Object-Oriented Software";
+      b.setAttribute("id","writers");
+      b.setAttribute("class","writers");
+      b.innerHTML="Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides"
+      c.setAttribute("id","book-desc");
+      c.setAttribute("class","book-desc");
+      
+      c.innerHTML="The Gang of Four's seminal catalog of 23 patterns to solve commonly occurring design problems Patterns allow designers to create more flexible, elegant, and ultimately reusable designs without having to rediscover the design solutions themselves. Highly influential, Design Patterns is a modern classic that introduces...";
+      container.appendChild(x);
+      x.appendChild(y);
+      y.appendChild(z);
+      z.appendChild(d);
+      x.appendChild(a);
+      x.appendChild(b);
+        x.appendChild(c);
+      
+      
+    }
+    }
+  </script>
 </head>
-<body>
+<body onload="adddata()">
   <header>
     <nav>
       <a href="">Home</a>
@@ -143,32 +189,24 @@
       <a href="./LoginPage.html" target="_blank">Login</a>
     </nav>
   </header>
-
   <main>
-    <div class="all-books">
-      <div class="book">
+    <div class="all-books" id="all-books">
+      <!-- <div class="book" id="Book">
         <div class="imageContainer">
-
-          <a href="https://books.google.co.in/books?id=6oHuKQe3TjQC&source=gbs_slider_cls_metadata_0_mylibrary&redir_esc=y" target="_blank"><img class="image1" src="./Images/sample-book-img.jpeg" alt=""></a>
-        </div>
-        
+          <a  id="a" href="https://books.google.co.in/books?id=6oHuKQe3TjQC&source=gbs_slider_cls_metadata_0_mylibrary&redir_esc=y" target="_blank"><img id="image1" class="image1" src="./Images/sample-book-img.jpeg" alt=""></a>
+        </div> -->
         <!-- <div class="imageContainer"></div> -->
-          
-        <div class="book-title">Design Patterns: Elements of Reusable Object-Oriented Software</div>
-        
-        <div class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+        <!-- <div id="book-title" class="book-title">Design Patterns: Elements of Reusable Object-Oriented Software</div>
+        <div id="writers" class="writers">Writers : Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
         </div>
-
-        <div class="book-desc">The Gang of Four's seminal catalog of 23 patterns to solve commonly occurring design problems Patterns allow designers to create more flexible, elegant, and ultimately reusable designs without having to rediscover the design solutions themselves. Highly influential, Design Patterns is a modern classic that introduces...</div>
-
+        <div id="book-desc" class="book-desc">The Gang of Four's seminal catalog of 23 patterns to solve commonly occurring design problems Patterns allow designers to create more flexible, elegant, and ultimately reusable designs without having to rediscover the design solutions themselves. Highly influential, Design Patterns is a modern classic that introduces...</div>
         <div class="book-buttons">
           <button>Preview</button>
           <button>Download</button>
           <button><img src="./notes-button.webp" alt=""></button>
         </div>
-
-      </div>
-
+      </div> -->
+<!-- 
       <div class="book">
 
         <div class="imageContainer">
@@ -189,8 +227,8 @@
           <button>Notes</button>
         </div>
 
-      </div>
-
+      </div> -->
+<!-- 
       <div class="book">
         <div class="imageContainer">
 
@@ -212,9 +250,9 @@
           <button>Notes</button>
         </div>
 
-      </div>
+      </div> -->
 
-      <div class="book">
+      <!-- <div class="book" id="book">
         <div class="imageContainer">
           <a href="https://books.google.co.in/books/about/Head_First_Java.html?id=kKtQAAAAMAAJ&source=kp_book_description&redir_esc=y" target="_blank"><img class="image1" src="./Images/java-book.webp" alt=""></a>
         </div>
@@ -233,8 +271,8 @@
           <button>Notes</button>
         </div>
 
-      </div>
-
+      </div> -->
+<!-- 
       <div class="book">
         <div class="imageContainer">
           <a href="./cs-booksite2.html" target="_blank"><img class="image1" src="./Images/dsaBook-img.jpeg" alt=""></a>
@@ -254,7 +292,7 @@
           <button>Notes</button>
         </div>
 
-      </div>
+      </div> -->
     </div>
 
   </main>
