@@ -139,10 +139,11 @@
     <nav>
         <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">Feedback</a></li>
             <li><a href="">Notes</a></li>
             <li><a href="cs-booksite2.html">Books</a></li>
             <li><a href="">PYQs</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="">Sign In</a></li>
         </ul>
     </nav>
 
@@ -174,8 +175,24 @@
         </div>
     </main>
 
-    <footer>
+    <!-- <footer>
         <p>&copy; gsdjcgsdlgsd</p>
-    </footer>
+    </footer> -->
+    <script>
+        
+        const containers = document.querySelectorAll('.container');
+
+        containers.forEach(container => {
+            const vidSpan = container.querySelector('.vid');
+   
+            container.addEventListener('mouseover', function() {
+                vidSpan.style.display = 'inline';
+            });
+      
+            container.addEventListener('mouseout', function() {
+                vidSpan.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>

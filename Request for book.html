@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Request Form</title>
+    <style>
+    body {
+
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url();
+        background-size: cover;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    /* nav {
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+} */
+nav ul {
+    list-style: none;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    p {
+        text-align: center;
+        color: #666;
+    }
+
+    form {
+        max-width: 80vw;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #d5cce7;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .name{
+        display: flex;
+        gap: 20px;
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="file"] {
+        margin-top: 5px;
+    
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        display: block;
+        justify-content: center;
+        /* width: 100%; */
+        padding: 10px;
+        background-color: #216976;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    } 
+   
+
+
+    input[type="submit"]:hover {
+        background-color: #dd24ce;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Book Request Form</h1>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Notes</a></li>
+            <li><a href="">Videos</a></li>
+            <li><a href="cs-booksite2.html">Books</a></li>
+            <li><a href="">PYQs</a></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Sign In</a></li>
+        </ul>   
+    </nav>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <p>Please fill out the form below to request a book that is not available on our site.</p>
+
+        <div class="name">
+            <label for="first_name">First Name</label>
+            <input type="text"  id="first_name" name="first_name">
+
+            <label for="last_name">Last Name</label>
+            <input type="text"  id="last_name" name="last_name">
+        </div>
+
+        <label for="institute">Institute:</label><br>
+        <input type="text" id="Institute" name="Institute" ><br><br>
+
+        <label for="institute">Reg. No:</label><br>
+        <input type="text" id="Institute" name="Institute" ><br><br>
+
+        <label for="book_title">Book Title:</label><br>
+        <input type="text" id="book_title" name="book_title" ><br><br>
+        
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" ><br><br>
+        
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" ><br><br>
+        
+        <label for="isbn">ISBN (if available):</label><br>
+        <input type="text" id="isbn" name="isbn"><br><br>
+        
+        <label for="request_message">Message (optional):</label><br>
+        <textarea id="request_message" name="request_message" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="user_book">Upload Your Own Book (optional):</label><br>
+        <input type="file" id="user_book" name="user_book"><br><br>
+        
+        <input type="submit" value="Submit Request">
+    </form>
+</body>
+</html>
